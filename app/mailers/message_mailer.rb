@@ -5,9 +5,6 @@ class MessageMailer < ApplicationMailer
   #
   #   en.message_mailer.new_message.subject
   #
-  def create
-    @greeting = "Hi"
-    mail to: "jbrundagejr@gmail.com"
-  end
+  
 
 end
