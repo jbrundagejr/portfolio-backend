@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'lookfarcamera@gmail.com'
+  default from: ENV['email_user_name']
   layout 'mailer'
 end
