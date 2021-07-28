@@ -48,7 +48,7 @@ Rails.application.configure do
     port: 587,
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: ENV['email_user_name']
+    user_name: ENV['email_user_name'],
     password: ENV['email_password']
   }
   config.action_mailer.default_url_options = {host: "localhost:3000", protocol: 'http'}
