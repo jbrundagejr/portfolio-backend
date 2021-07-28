@@ -1,4 +1,5 @@
 Project.destroy_all
+Email.destroy_all
 
 puts "Creating Projects..."
 
