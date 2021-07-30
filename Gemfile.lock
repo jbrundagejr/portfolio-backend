@@ -134,8 +134,8 @@ GEM
     websocket-extensions (0.1.5)
 
 PLATFORMS
-  x86_64-linux
   ruby
+  x86_64-linux
 
 DEPENDENCIES
   active_model_serializers
