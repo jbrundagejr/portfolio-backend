@@ -67,9 +67,10 @@ config.action_mailer.smtp_settings = {
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: ENV['email_user_name'],
-    password: ENV['email_password']
+    password: ENV['email_password'],
+    domain: "heroku.com"
 }
-config.action_mailer.default_url_options = {host: "https://mighty-fjord-51024.herokuapp.com", protocol: 'http'}
+config.action_mailer.default_url_options = {host: "https://mighty-fjord-51024.herokuapp.com/", protocol: 'http'}
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
