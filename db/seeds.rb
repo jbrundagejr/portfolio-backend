@@ -36,5 +36,16 @@ Project.create(name: "Beer Snob",
                 github_link: "https://github.com/esellers25/beer-snob-frontend",
                 backend_repo: "",
                 made_with: "devicon-react-original-wordmark, devicon-html5-plain-wordmark, devicon-css3-plain-wordmark")
+Project.create(name: "This Porfolio", 
+                image: "https://imgur.com/SYSODKy.png",
+                blurb: "I hoped to showcase a little of all my skills, with both a React frontend and Rails backend. I
+                wanted to present a little of my personality and tastes in design, with the goal of you seeing what your
+                own app could be.",
+                link: "",
+                demo_link: "",
+                github_link: "https://github.com/jbrundagejr/portfolio-frontend",
+                backend_repo: "https://github.com/jbrundagejr/portfolio-backend",
+                made_with: "devicon-react-original-wordmark, devicon-ruby-plain-wordmark, devicon-rails-plain-wordmark,
+                devicon-html5-plain-wordmark, devicon-css3-plain-wordmark")
 
 puts "Done!"

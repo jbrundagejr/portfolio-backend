@@ -63,13 +63,13 @@ Rails.application.configure do
 # SMTP settings for gmail
 config.action_mailer.smtp_settings = {
   address: "smtp.gmail.com",
-  port: 587,
-  # domain: "",
-  authentication: "plain",
-  enable_starttls_auto: true,
-  user_name: Rails.application.secrets.email_user_name,
-  password: Rails.application.secrets.email_password
+    port: 587,
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: ENV['email_user_name'],
+    password: ENV['email_password']
 }
+config.action_mailer.default_url_options = {host: "https://mighty-fjord-51024.herokuapp.com/", protocol: 'http'}
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
