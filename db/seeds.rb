@@ -36,7 +36,7 @@ Project.create(name: "Beer Snob",
                 github_link: "https://github.com/esellers25/beer-snob-frontend",
                 backend_repo: "",
                 made_with: "devicon-react-original-wordmark, devicon-html5-plain-wordmark, devicon-css3-plain-wordmark")
-Project.create(name: "This Porfolio", 
+Project.create(name: "This Portfolio", 
                 image: "https://imgur.com/CPOmFem.jpg",
                 blurb: "I hoped to showcase a little of all my skills, with both a React frontend and Rails backend. I
                 wanted to present a little of my personality and tastes in design, with the goal of you seeing what your
