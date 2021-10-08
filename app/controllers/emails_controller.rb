@@ -2,8 +2,12 @@ class EmailsController < ApplicationController
 
   def create
     @email = Email.create(message_params)
-    MessageMailer.with(email: @email).new_message.deliver
-    render json: {message: "Thanks for emailing me. I'll get back to you shortly!"}
+    if @email.save!
+      MessageMailer.with(email: @email).new_message.deliver
+      render json: {message: "Thanks for emailing me. I'll get back to you shortly!"}
+    else
+      render json: {errors: @email.errors.full_messages}, status: :unprocessable_entity
+    end
   end
 
   private
